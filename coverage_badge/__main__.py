@@ -96,7 +96,7 @@ def get_badge(total, color=DEFAULT_COLOR, name=None):
     """
     if name is None:
         name = "flat.svg"
-    elif name == "extensions.svg" and total == 100:
+    elif name == "extensions.svg" and total == "100":
         name = "extensions100.svg"
     template_path = os.path.join("templates", name)
     template = pkg_resources.resource_string(__name__, template_path).decode("utf8")
